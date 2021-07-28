@@ -14,6 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-    Route::get('/displaythesum', 'MyfirstController@index');
+    Route::get('/displaythesum', 'MyfirstController@index');{
 
+    };
+    Route:: get ('/addition', function(){
+    	$num1 =5;
+    	$num2 =8;
+    	$result =$num1 + $num2;
+    	return " The sum of ".$num1." and ".$num2." is ".$result;
+});
 
